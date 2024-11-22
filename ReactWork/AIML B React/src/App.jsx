@@ -35,22 +35,35 @@
 // }
 
 // export default App;
-import React from "react";
-import Student from "./student";
-import logo from "./wes-hicks-4-EeTnaC1S4-unsplash.jpg"
+// import React from "react";
+// import Student from "./student";
+// import logo from "./wes-hicks-4-EeTnaC1S4-unsplash.jpg"
+// import StudentState from "../StudentState";
 
-const App = () => {
-  let a=20;
-  let mystyle={
-    backgroundColor:"cyan",
-    color:"red"
-  }
+// const App = () => {
+//   let a=20;
+//   let mystyle={
+//     backgroundColor:"cyan",
+//     color:"red"
+//   }
+//   return (
+//   <div style={{color:"red"}}>
+//     <h2>ABES ENGINEERING COLLEGE</h2>
+//   <Student pic={<img src={logo} width="80px" height="50px" ></img>} name="Shubham" branch="CSE AIML" college="ABES ENGINEERING COLLEGE" roll="123456" section="B" />
+//   </div>
+//   )
+// };
+
+// export default App;
+import React from 'react'
+import StudentState from './StudentState'
+import ImageManipulation from './ImageManipulation'
+function App() {
   return (
-  <div style={{color:"red"}}>
-    <h2>ABES ENGINEERING COLLEGE</h2>
-  <Student pic={<img src={logo} width="80px" height="50px" ></img>} name="Shubham" branch="CSE AIML" college="ABES ENGINEERING COLLEGE" roll="123456" section="B" />
-  </div>
+    <div style={{marginLeft:"300px"}}>
+      <ImageManipulation />
+    </div>
   )
-};
+}
 
-export default App;
+export default App
